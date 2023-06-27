@@ -1,8 +1,8 @@
 const process = require('process');
 
-const data = process.argv[2].toString();
-let hour = data.slice(0, 2);
-let min = data.slice(3, 5);
+//const data = process.argv[2];
+//let hour = data.slice(0, 2);
+//let min = data.slice(3, 5);
 //let minOne = min.slice(0,1);
 //let minTwo = min.slice(1);
 
@@ -180,4 +180,5 @@ function toWord (hour, min) {
 
     console.log(result)
 }
-toWord(hour, min);
+//toWord(hour, min);
+module.exports = {toWord: toWord};
